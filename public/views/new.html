@@ -1,0 +1,58 @@
+<div class="container">
+<div class="col-md-12 ">
+    <div id='contact_page'>
+   
+                       
+                      <h2>Klik<span style="color:#da7126;"><i>Pad</i></span></h2>  
+                      <p>Your perfect Contact web app</p><hr class="hr-dark">
+                      
+                      </div>
+
+                      <div class="col-md-10 col-md-offset-3" id="menu1">
+                        <h2><button class="btn btn-default" ng-click='contactPage()'><span class="fa fa-arrow-left"></span> Back</button>
+                         <span id="contact_list"><span class='fa fa-user-plus'></span>Add Contact</span><span id="welcome" class="pull-right">Welcome. |   <span class='fa fa-sign-out'> <a href='/logout' target='_self'  style='font-weight:600;'>Logout</a></span></h2></div><br>
+                         <div class="row"></div>
+                           
+                                <div class='col-md-8 col-md-offset-2' id="alert">
+                          <div  uib-alert ng-repeat='alert in alerts' ng-class="'alert-'+(alert.type)"  close='closeAlert($index)'><h4>{{alert.msg1}}<br>{{alert.msg}}</h4></div>
+                          </div>
+
+                         <div class="col-md-8 col-md-offset-2" id="new_contact">
+                            <h2>Enter Contact Info <span class="fa fa-pencil"></span><hr></h2>
+                         <form>
+                          
+                             <div class="form-group" id="input">
+                               <div class="row">
+                                 <label class="col-md-3">First Name:</label>
+                                   <div class="col-md-8">
+                                 <input type="text" ng-model="contact.firstName" placeholder="First Name" class="form-control" required> 
+                                 </div></div></div>
+                                   <div class="form-group" id="input">
+                                       <div class="row">
+                                 <label class="col-md-3">Last Name:</label>
+                                 <div class="col-md-8">
+                                 <input type="text" ng-model="contact.lastName" placeholder="Last Name" class="form-control" required> 
+                                 </div>
+                                 </div></div>
+                                   <div class="form-group" id="input">
+                                       <div class="row">
+                                 <label class="col-md-3">Phone Number:</label>
+                                   <div class="col-md-8">
+                                 <input type="tel" ng-model="contact.PhoneNumber" placeholder="Contact Number" class="form-control" required> 
+                                 </div>
+                                 </div></div>
+                                   <div class="form-group" id="input">
+                                       <div class="row">
+                                  <label class="col-md-3">Email Address:</label>
+                                    <div class="col-md-8">
+                                 <input type="email" ng-model="contact.Email" placeholder="Email Address" class="form-control"> 
+                                 </div></div></div>
+                                 <div class="form-group" id="input">
+                                 <div class="col-md-4 col-md-offset-4">
+                                 <input type="submit" class="btn btn-default form-control" value="Add Contact" ng-click='save()' >
+                                 </div></div>
+                             </form>
+                             </div>
+                         </div>
+</div>
+</div>

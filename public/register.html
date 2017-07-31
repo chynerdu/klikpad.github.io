@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html    > 
+<head>
+   <title>klikPad</title>
+<meta name="viewport" content="width=device-width ,initial-scale=1">
+    <base href='/'>
+    <link rel='stylesheet' href='lib/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/lib/css/bootstrap.css">
+<link rel="stylesheet" href="lib/css/megamenu.css" >
+<link rel="stylesheet" href="lib/css/style.css">
+ <link rel="stylesheet" href="lib/css/owl-carousel/owl.carousel.min.css">
+  	<link rel="stylesheet" href="lib/css/owl-carousel/owl.theme.default.min.css">
+  	<link rel="stylesheet" href="lib/css/owl-carousel/owl.carousel.custom.css">
+       <link rel="stylesheet" href="/lib/angular-ui-bootstrap/dist /ui-bootstrap-csp.css">                      
+<link rel="stylesheet" href="lib/css/animate.css">
+<link rel="stylesheet" href="lib/css/lightbox.css">
+<link rel="stylesheet" href="lib/css/font-awesome.css">
+
+<link rel="stylesheet" href="lib/css/aos.css">
+<link rel="icon" type="image/png" href="/lib/images/logo2.png"/>
+
+
+</head>
+<body id="reg_body" >
+   
+        <nav class='navbar navbar-custom navbar-fixed-top'>
+            <div class='navbar-header' ng-click='home()'>
+              <a href="#" ng-click='home1()' class='navbar-brand'><span class="fa fa-home" >klik<i style="color:#da7126;">Pad.com</i></span></a></div>
+              <ul class='nav nav-tabs'>
+                  <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Privacy</a></li>
+              </ul>
+            </nav>
+
+
+
+
+<div class="container">
+<div class="col-md-12 ">
+    <div id='contact_page' style="padding-bottom:0px;">
+   
+                       
+                      <h2>Klik<span style="color:#da7126;"><i>Pad</i></span></h2>  
+                      <p>Your perfect Contact web app</p><hr class="hr-dark">
+                      
+                      </div>
+
+                      <div class="col-md-10 col-md-offset-3" id="menu3" >
+                        
+                       <i> <button class='btn btn-default btn-lg pull-left' ng-click='home1()'><span class='fa fa-home'></span> Home</button></i>
+                        <h2><span id="contact_list" >Free sign up</span></h2></div>
+                        
+                          
+                     
+                         <div class="col-md-8 col-md-offset-2" id="new_contact3" style='margin-top:5%;background-color:#f2893e; -webkit-filter:opacity(60%);'>
+                            <h2>Register<hr></h2>
+                         <form action='/register' method='POST'>
+                          
+                             <div class="form-group" id="input1">
+                               <div class="row">
+                                 <label class="col-md-3">Name:</label>
+                                   <div class="col-md-8">
+                                         <div class="input-group ">
+                                         <span class="input-group-addon transparent "><span class='fa fa-user-o'></span></span>
+                                 <input type="text" name='name' ng-model='name' placeholder="First Name" class="form-control" required> 
+                                 </div></div></div></div>
+                                   <div class="form-group" id="input1">
+                                       <div class="row">
+                                 <label class="col-md-3">Username:</label>
+                                 <div class="col-md-8">
+                                     <div class="input-group ">
+                                         <span class="input-group-addon transparent "><span class='fa fa-user'></span></span>
+                                 <input type="text" name='username' ng-model='username' placeholder="choose a username" class="form-control left-border-none" required> </div>
+                                 </div>
+                                 </div></div>
+                                   <div class="form-group" id="input1">
+                                       <div class="row">
+                                 <label class="col-md-3">Password:</label>
+                                   <div class="col-md-8">
+                                         <div class="input-group ">
+                                         <span class="input-group-addon transparent "><span class='fa fa-key'></span></span>
+                                 <input type="password" name='password' placeholder="Pick a password" class="form-control left-border-none" required> 
+                                 </div></div>
+                                 </div></div>
+                                   <div class="form-group" id="input1">
+                                       <div class="row">
+                                  <label class="col-md-3">Email Address:</label>
+                                    <div class="col-md-8">
+                                         <div class="input-group ">
+                                         <span class="input-group-addon transparent "><span class='fa fa-envelope'></span></span>
+                                 <input type="email" name='email' placeholder="Email Address" class="form-control"> 
+                                 </div></div></div></div>
+                                 <div class="form-group" id="input1">
+                                 <div class="col-md-4 col-md-offset-4">
+                                 <button class="btn btn-default form-control" ng-click="open(name, username)">Sign up</button>
+                                 </div></div>
+                             </form>
+                             </div>
+
+                              <script type="text/ng-template" id="orderModal.html">
+  <div ng-init='names=name'>
+      <div class="col-md-12">
+         
+   <div class="modal-header">
+       <h2><i>Thank You</i></h2></div>
+       <div class="modal-body">
+            <h3></h3>
+
+           <h4>Hello {{name3}}, thank you for placing an order</h4><br>
+           <h5> Your item will be delivered to your specified location within <i style="color:red">48hours</i></h5><br>
+           <h5>Check your email: <i style="color:brown; font-weight:600;">{{name4}}</i> for order details</h5>
+           <p>Thank you for shopping with us</p>
+          
+           </div>
+           <div class="modal-footer">
+                <h5>Sales Team:</h5>
+               <p>Klikstore.com</p>
+               <div id="modal_btn">
+               <button class="btn btn-default" ng-click="cancel()">Submit Order</button>
+               </div>
+               </div></div>
+</div></div>
+  </script>
+                         </div>
+</div>
+</div>
+
+
+
+ <footer>
+             
+                 <div id="footer_part" class=" navbar navbar-inverse ">
+                     <p id="social">Connect with us: <span class='fa fa-facebook'> </span> <span class='fa fa-twitter '></span>
+                      <span class='fa fa-google-plus '></span></p>
+                     <p id="copy" class="navbar-brand">KlikNg &copy2017</p>
+                     <ul>
+                         <li> Read our Privcacy Policy</li>
+                     </ul>
+                 </div>
+           
+             </footer>
+    </body>
+
+
+        <script src='lib/jquery/dist/jquery.min.js'></script>
+        
+       
+     
+          <script src='lib/angular/angular.min.js'></script>
+           <script src='lib/ui-bootstrap-0.6.0.min.js'></script> 
+           <script src='lib/angular-ui-bootstrap-modal.js'></script> 
+             <script src='lib/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js'></script>
+           <script src='lib/angular-route/angular-route.min.js'></script>
+            <script src='lib/angular-resource/angular-resource.min.js'></script>
+            
+            
+                 
+           <script src='src/app.js'></script>
+            <script src='src/controllers.js'></script>
+            <script src='src/factories.js'></script>
+             <script src='src/filter.js'></script>
+               <script src='src/directives.js'></script>
+               <script src="js/jquery.js"></script>
+<script src="lib/js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+ <script src="lib/js/angular.min.js"></script>
+ <script src="lib/js/news.js"></script>
+
+ <script src="lib/js/jquery.nicescroll.js"></script>
+  <script src="lib/js/aos.js"></script>
+ <script src="lib/js/anijs-min.js"></script>
+<script src="lib/js/anijs.js"></script>
+
+ 
+<script src="lib/js/lightbox.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script src="lib/js/owl.carousel.min.js"></script>
+<script src="lib/js/main.js"></script>
+<script>
+    $(document).ready(function(){
+        $("html").niceScroll();
+    });
+    </script>
+       
+        </html>

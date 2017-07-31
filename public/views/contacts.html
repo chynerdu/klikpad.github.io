@@ -1,0 +1,53 @@
+<div class="container" >
+<div class="col-md-12 ">
+    <div id='contact_page'>
+    
+   
+                      <h2>Klik<span style="color:#da7126;"><i>Pad</i></span></h2>  
+                      <p>Your perfect Contact web app</p><hr class="hr-dark">
+                      
+                      </div>
+
+                      <div class="col-md-10 col-md-offset-3" id="menu">
+                        <h2><button class="btn btn-default" ng-click='new()'><span class="fa fa-plus"></span> New Contact</button>
+                         <span id="contact_list"><span class='fa fa-address-book-o'></span>Contacts</span><span id="welcome" class="pull-right">Welcome. | {{username}} <span class='fa fa-sign-out'> <a ng-href='/logout' target='_self' style='font-weight:600;'>Logout</a></span></span></h2></div><br>
+                         
+                      
+
+                              <div uib-alert ng-repeat='alert in alerts' ng-class="'alert-'+(alert.type)" style=" color:blue;" close='closeAlert($index)'>{{alert.msg}}</div>
+                           	
+
+                            <div class="col-md-12" id="contact_page1">
+                             <input type='text' ng-model='search' placeholder="search contact list" class='form-control' style="box-shadow:0px 0px 0px 1px #6fefc4; text-weight:600;">
+                          <div class="col-md-3 col-sm-3 col-xs-3" id='single_contact' ng-repeat='X in contacts |filter : search |orderBy:sort.field:sort.order |limitTo:lim'>
+                            
+                             <div class="row">
+                             
+                               <div class="col-md-2 " id="img"><img  class="mythumbnail img-responsive img-circle" ng-src="{{thumbnail.dataUrl || 'lib/images/fb-image.jpg'}}">
+                                 
+                                 </div><div class="col-md-4 col-sm-4 col-xs-4" id="name">Name:{{X.firstName}}<br>Phone Number:{{X.PhoneNumber}}</div>
+                             </div>
+                          
+                                      
+                                         <div class="col-md-6" id="mail"> E-mail:{{X.Email}}</div><div class="col-md-2" id="contact_call1"><a ng-href="tel:{{X.Phonenumber}}"><span class='fa fa-phone fa-2x'></span></a>
+                                       <a ng-href="mailto:{{X.Email"}}> <span class='fa fa-envelope fa-2x'></span></a></div>
+                                       <div class='col-md-6' id="details">
+                                        
+                                         <button class="btn-btn-default" ng-click='show(X.id)'>View Contact</button>
+                                       </div>
+                                       
+                                       </div>
+                                     <div class="row"></div>
+                                      
+
+                     
+                                      <div id="more">
+                                    <button  ng-click="lim=lim+1">Load more</button>
+                                    </div></div></div>
+                                    </div><hr>
+                                      
+                            
+                               
+                                     
+
+    
