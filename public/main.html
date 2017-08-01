@@ -23,7 +23,7 @@
 </head>
 <body  ng-controller='HomepageController' style="background-color:#ffffee;">
    
-        <nav class='navbar navbar-custom '>
+        <nav class=' navbar-inverse '>
             <div class='navbar-header'>
               <a ng-click='home1()' class='navbar-brand'><span class="fa fa-home">klik<i style="color:#da7126;">Pad.com</i></span></a></div><span>
               <ul class='nav nav-tabs'>
@@ -58,14 +58,17 @@
              <script src='lib/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js'></script>
            <script src='lib/angular-route/angular-route.min.js'></script>
             <script src='lib/angular-resource/angular-resource.min.js'></script>
+          
             
-            
+        
                  
            <script src='src/app.js'></script>
             <script src='src/controllers.js'></script>
             <script src='src/factories.js'></script>
              <script src='src/filter.js'></script>
                <script src='src/directives.js'></script>
+                 <script src='src/fileModel.js'></script>
+                 <script src='src/fileServices.js'></script>
                <script src="js/jquery.js"></script>
 <script src="lib/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
@@ -76,6 +79,10 @@
   <script src="lib/js/aos.js"></script>
  <script src="lib/js/anijs-min.js"></script>
 <script src="lib/js/anijs.js"></script>
+<script src="lib/js/wow.min.js"></script>
+<script src="lib/js/stickyNavbar.js"></script>
+
+
 
  
 <script src="lib/js/lightbox.js"></script>
@@ -86,6 +93,13 @@
     $(document).ready(function(){
         $("html").niceScroll();
     });
+
+    new WOW().init();
+
+    $(function () {
+   $('.navbar').stickyNavbar();
+});
+
     </script>
        
         </html>

@@ -3,26 +3,27 @@
     <div id='single'>
    
    
-                     
+                    
                       <h2>Klik<span style="color:#da7126;"><i>Pad</i></span></h2>  
-                      <p>Your perfect Contact web app</p><hr class="hr-dark">
+                      <p style="color:white;">Your perfect Contact web app</p><hr class="hr-dark">
                       
                       </div>
 
-                      <div class="col-md-10 col-md-offset-2" id="menu2" >
+                      <div class="col-md-10 col-md-offset-2  wow bounceInLeft" id="menu2" >
                         <h2><button class="btn btn-default" ng-click='contactPage()'><span class="fa fa-arrow-left"></span> Back</button>
-                         <span id="contact_list"><span class='fa fa-user-circle-o'></span>{{contact.firstName}} {{contact.lastName}}</span><span id="welcome" class="pull-right">Welcome. |   <span class='fa fa-sign-out'> <a href='/logout' target='_self' style='font-weight:600;'>Logout</a></span></h2></div><br>
+                         <span id="contact_list"><span class="fa fa-user-circle-o wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms"></span>{{contact.firstName}} {{contact.lastName}}</span><span id="welcome" class="pull-right">Welcome. |   <span class='fa fa-sign-out'> <a href='/logout' target='_self' style='font-weight:600;'>Logout</a></span></h2></div><br>
                          <div class="row"></div>
                           <div class="col-md-8 col-md-offset-1" id="single1">
                             
                              <div class="row">
                              
-                             <div class="col-md-2 col-sm-2 col-sx-2" id="image1" ><img  class="mythumbnail img-responsive" ng-src="{{thumbnail.dataUrl || 'lib/images/fb-image.jpg'}}">
-                                </div><span><div class="col-md-4 col-sm-4 col-sx-4" id="name1">Name: {{contact.firstName}}<br>No: {{contact.PhoneNumber}}</div>  <span>
+                             <div class="col-md-2 col-sm-2 col-sx-2 wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms" id="image1" ><img  class="mythumbnail img-responsive" ng-src="{{thumbnail.dataUrl || 'lib/images/fb-image.jpg'}}">
+                                </div><span><div class="col-md-4 col-sm-4 col-sx-4" id="name1">First Name: {{contact.firstName}}<br>Last Name: {{contact.lastName}} <br> No: {{contact.PhoneNumber}}</div>  <span>
                              </div>
                           
                                       
-                                         <div class="col-md-4" id="email1"> E-mail: {{contact.Email}}</div><div class="col-md-2" id="contact_call1"><a ng-href="tel:{{X.Phonenumber}}"><span class='fa fa-phone fa-2x'></span></a>
+                                         <div class="col-md-4" id="email1 wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms"> E-mail: {{contact.Email}}</div>
+                                         <div class="col-md-2 wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms" id="contact_call1"><a ng-href="tel:{{X.Phonenumber}}"><span class='fa fa-phone fa-2x'></span></a>
                                        <a ng-href="mailto:{{X.Email"}}> <span style="padding-left:2%;border-left:1px solid #f2893e;" class='fa fa-envelope fa-2x'></span></a></div>
                                         <div class="row">
                                         <div class="col-md-2" id="single_del">

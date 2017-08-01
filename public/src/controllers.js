@@ -1,7 +1,7 @@
 angular.module('PhoneBook')
        .controller('HomepageController', function($scope, $window, $timeout, $routeParams, Contact, $location){
         
-
+         
                 $scope.sort =function(field){
                $scope.sort.field=field;
                $scope.sort.order= !$scope.sort.order;
@@ -45,8 +45,16 @@ angular.module('PhoneBook')
                $location.url('/');
                 $window.location.reload();
            };
-
+  
+       
+                 $scope.alerts=[{type:'', msg2:'By signing up, you agree to the terms and condition in using this app'}];
+                  $scope.alerts=[{type:'success', msg1:'Welcome new user, Quickly sign up below by entering your basic account info'}];
+              $scope.closeAlert=function(index){
+                  $scope.alerts.splice(index, 1);
+              };
+         
             
+       
 
              
 $scope.animationsEnable = true;
@@ -105,6 +113,11 @@ $scope.cancel = function(){
            $scope.sort.order=false;
 
             
+                 $scope.alerts=[{type:'', msg:''}];
+                  $scope.alerts=[{type:'success', msg1:'Are you a new user?  Begin by adding yout first contact.  Simply click on the add contact below!!'}];
+              $scope.closeAlert=function(index){
+                  $scope.alerts.splice(index, 1);
+              };
 
           
              $scope.fields = ['firstName', 'lastName'];
@@ -122,7 +135,7 @@ $scope.cancel = function(){
               $scope.homePage=function(){
                   $location.url('/');
               };
-              $scope.lim=10;
+              $scope.lim=9;
           
            
        })
@@ -151,7 +164,7 @@ $scope.cancel = function(){
                   $scope.alerts.push({type:'success', msg:'Contact added successfully'});
                     $window.alert('Contact successfully added');
                      $location.url('/contact');
-                       $window.location.reload();
+                     
               
              };
              $scope.contactPage=function(){

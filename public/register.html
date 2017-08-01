@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html    > 
+<html  ng-app="PhoneBook" ng-controller='RegController'  > 
 <head>
    <title>klikPad</title>
 <meta name="viewport" content="width=device-width ,initial-scale=1">
@@ -20,10 +20,12 @@
 <link rel="icon" type="image/png" href="/lib/images/logo2.png"/>
 
 
+
 </head>
-<body id="reg_body" >
+
+<body id="reg_body"  >
    
-        <nav class='navbar navbar-custom navbar-fixed-top'>
+        <nav class='navbar navbar-custom'>
             <div class='navbar-header' ng-click='home()'>
               <a href="#" ng-click='home1()' class='navbar-brand'><span class="fa fa-home" >klik<i style="color:#da7126;">Pad.com</i></span></a></div>
               <ul class='nav nav-tabs'>
@@ -37,10 +39,10 @@
 
 <div class="container">
 <div class="col-md-12 ">
-    <div id='contact_page' style="padding-bottom:0px;">
+    <div id='contact_pagereg' style="padding-bottom:0px;">
    
                        
-                      <h2>Klik<span style="color:#da7126;"><i>Pad</i></span></h2>  
+                      <h2 class="wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms">Klik<span style="color:#da7126;"><i>Pad</i></span></h2>  
                       <p>Your perfect Contact web app</p><hr class="hr-dark">
                       
                       </div>
@@ -50,9 +52,18 @@
                        <i> <button class='btn btn-default btn-lg pull-left' ng-click='home1()'><span class='fa fa-home'></span> Home</button></i>
                         <h2><span id="contact_list" >Free sign up</span></h2></div>
                         
+                         
+                                <div class='col-md-8 col-md-offset-2' id="alert">
+                          <div  uib-alert ng-repeat='alert in alerts' ng-class="'alert-'+(alert.type)"  close='closeAlert($index)'><h4>{{alert.msg1}}</h4></div>
+                           	</div>
+
+                               
+                               
+                          
+
                           
                      
-                         <div class="col-md-8 col-md-offset-2" id="new_contact3" style='margin-top:5%;background-color:#f2893e; -webkit-filter:opacity(60%);'>
+                         <div class="col-md-8 col-md-offset-2  wow slideInLeft " id="new_contact3" style='margin-top:5%; background-color:#f2893e; -webkit-filter:opacity(80%);'>
                             <h2>Register<hr></h2>
                          <form action='/register' method='POST'>
                           
@@ -90,37 +101,20 @@
                                          <span class="input-group-addon transparent "><span class='fa fa-envelope'></span></span>
                                  <input type="email" name='email' placeholder="Email Address" class="form-control"> 
                                  </div></div></div></div>
+                
+                                        <div class="col-md-10">
+                                  <div class="alert alert-danger fade-in" id='alert'>
+                                    By signing up, you agree to the terms and conditions.</div></div>
                                  <div class="form-group" id="input1">
+
                                  <div class="col-md-4 col-md-offset-4">
-                                 <button class="btn btn-default form-control" ng-click="open(name, username)">Sign up</button>
+                            
+                                 <button class="btn btn-default form-control wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms" ng-click="open(name, username)">Sign up</button>
                                  </div></div>
                              </form>
                              </div>
 
-                              <script type="text/ng-template" id="orderModal.html">
-  <div ng-init='names=name'>
-      <div class="col-md-12">
-         
-   <div class="modal-header">
-       <h2><i>Thank You</i></h2></div>
-       <div class="modal-body">
-            <h3></h3>
-
-           <h4>Hello {{name3}}, thank you for placing an order</h4><br>
-           <h5> Your item will be delivered to your specified location within <i style="color:red">48hours</i></h5><br>
-           <h5>Check your email: <i style="color:brown; font-weight:600;">{{name4}}</i> for order details</h5>
-           <p>Thank you for shopping with us</p>
-          
-           </div>
-           <div class="modal-footer">
-                <h5>Sales Team:</h5>
-               <p>Klikstore.com</p>
-               <div id="modal_btn">
-               <button class="btn btn-default" ng-click="cancel()">Submit Order</button>
-               </div>
-               </div></div>
-</div></div>
-  </script>
+                         
                          </div>
 </div>
 </div>
@@ -170,6 +164,7 @@
   <script src="lib/js/aos.js"></script>
  <script src="lib/js/anijs-min.js"></script>
 <script src="lib/js/anijs.js"></script>
+<script src="lib/js/wow.min.js"></script>
 
  
 <script src="lib/js/lightbox.js"></script>
@@ -180,6 +175,10 @@
     $(document).ready(function(){
         $("html").niceScroll();
     });
+      new WOW().init();
+
+
+      
     </script>
        
         </html>

@@ -7,7 +7,7 @@ var express = require('express'),
 
     router
      
-       
+          .use(bodyParser.urlencoded())
          .use(bodyParser.json()) 
          .route('/contact')
          .get(function(req, res){

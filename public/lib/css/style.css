@@ -3,9 +3,33 @@
     clear:both;
 }
 
+#alert h4{
+    font-size:0.9em;
+    padding-top:0%;
+    padding-bottom:0%;
+    margin:0px;
+}
+#alert1 h4{
+    font-size:0.9em;
+    padding-top:0%;
+    padding-bottom:0%;
+    margin:0px;
+    color:black;
+}
+
+
 .navbar{
     background:transparent;
+     color: #fff !important;
+    text-decoration: underline !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
 }
+
 
 
 .navbar-brand span{
@@ -77,9 +101,14 @@ footer #footer_part ul{
     
 }
 #reg_body{
-     background:url(../images/bg1.jpg);
-   background-repeat:no-repeat;
-    background-size:100%;
+    background:url(../images/bg.jpg);
+     
+    position:relative;
+    background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:100% auto;
+    -o-background-size:100%;
+    
 
 }
 
@@ -137,7 +166,7 @@ footer #footer_part ul{
     background-color:#f2893e;
     width:70%;
     padding:3% 10% 5% 10%;
-    -webkit-filter:opacity(60%);
+    -webkit-filter:opacity(90%);
     margin-top:25%;
     margin-left:30%;
      font-family: 'Roboto Slab', serif;
@@ -189,23 +218,59 @@ input:hover{
 .mythumbnail{
     width:100%;
     height:100%;
+     max-width:200px;
 }
 #contact_page{
     padding:5% 10% 5% 10%;
-    margin-left:8%;
+    margin:3% 0 5% 0;
+    background:url(../images/bg.jpg);
+   background-repeat:no-repeat;
+    background-size:100%;
+    border:1px solid black;
 
 }
 #contact_page h2{
-    font-size:3.2em;
-    font-weight:500;
+    color:#6fefc4;
+    font-size:3.4em;
+    font-weight:600;
     font-family:  'Roboto Slab', serif;
 }
 
 #contact_page p{
-  
+    color:white;
     font-weight:600;
     font-family:  'Roboto Slab', serif;
 }
+#contact_page h2,
+#contact_page p{
+    margin-left:12%;
+
+}
+
+#contact_pagereg{
+    padding:0% 10% 5% 2%;
+    margin:0% 0 5% 0;
+  
+
+}
+#contact_pagereg h2{
+    color:#6fefc4;
+    font-size:3.4em;
+    font-weight:600;
+    font-family:  'Roboto Slab', serif;
+}
+
+#contact_pagereg p{
+    color:white;
+    font-weight:600;
+    font-family:  'Roboto Slab', serif;
+}
+#contact_pagereg h2,
+#contact_pagereg p{
+    margin-left:12%;
+
+}
+
 #contact_page1{
     margin-bottom:7%;
     background-color:#fffff6;
@@ -222,6 +287,26 @@ input:hover{
      font-family:'Roboto Slab', serif;
 }
 
+#single{
+    background:url(../images/bg.jpg);
+   background-repeat:no-repeat;
+    background-size:100%;
+    padding:5%;
+    margin:3% 0 5% 0;
+    font-weight:600;
+    border:1px solid black;
+    
+}
+#single h2{
+    color:#6fefc4;
+    font-size:3.4em;
+   
+}
+
+#single h2,
+#single p{
+ margin-left:12%;
+}
  #single_contact{
      box-shadow: 1px 1px 1px 1px #f2893e;
     background:linear-gradient(  white, white,  #fff1a6, white, white);
@@ -350,6 +435,7 @@ margin-left:-10%;
     font-family:'Roboto Slab', serif;
     letter-spacing:1px;
     text-shadow: 0.5px 1px #6fefc4;
+    margin-left:10%;
 }
 #menu #welcome,
 #menu1 #welcome,
@@ -372,7 +458,7 @@ margin-left:-10%;
   
     box-shadow:1px 1px 1px 1px #f2893e;  
     margin-top:0px;
-    -webkit-filter:opacity(60%);
+    -webkit-filter:opacity(80%);
 }
 #new_contact h2{
     font-size:1.7em;
@@ -405,8 +491,8 @@ margin-left:-10%;
 /*registration form */
 
 #new_contact3{
-    padding:0% 0% 4% 2%;
-     margin-bottom:7%;
+    padding:0% 0% 1% 2%;
+     margin-bottom:2%;
     background-color:#fffff6;
     box-shadow:1px 1px 1px 1px #f2893e;  
     margin-top:0px;
@@ -431,7 +517,9 @@ margin-left:-10%;
  margin-top:0px;
 
 }
-#input1 label{
+#input1 label,
+#input1 alert{
+
      font-family:'Roboto Slab', serif;
      font-size:1.2em;
      font-weight:600;
@@ -505,6 +593,14 @@ margin-left:-10%;
        padding:3%;
        
 
+}
+
+.mythumbnail{
+    height:100%;
+    width:100%;
+    max-width:200px;
+   
+    margin-bottom:5%;
 }
 
 @media only screen  and ( orientation: landscape){
@@ -625,7 +721,7 @@ nav ul li a{
     background-color:#f2893e;
      width:80%;
     padding:1% 10% 5% 10%;
-    -webkit-filter:opacity(60%);
+    -webkit-filter:opacity(90%);
     margin-top:15%;
     margin-left:10%;
     margin-bottom:8%;
@@ -822,6 +918,7 @@ margin-left:-10%;
 #menu3  h2{
  font-weight:600;
     font-size:2.6em;
+   
 }
 #contact_list{
      margin-left:5%;
@@ -871,13 +968,7 @@ margin-left:-10%;
 
  
 
-#contact_page{
-    padding:25% 10% 0% 10%;
-    margin-left:8%;
-     margin-bottom:0%;
-      margin-top:0%;
 
-}
 #contact_page h2{
     padding-top:0%;
     margin-top:0%;
@@ -911,7 +1002,7 @@ margin-left:-10%;
     margin-top:0px;
     margin-left:3%;
     margin-right:5%;
-    -webkit-filter:opacity(60%);
+    -webkit-filter:opacity(80%);
 }
 #new_contact h2{
     font-size:1.2em;
@@ -1062,7 +1153,8 @@ margin-left:-20%;
  margin-left:12%;
 
 }
-#input1 label{
+#input1 label,
+#input1 alert{
      font-family:'Roboto Slab', serif;
      font-size:0.8em;
      font-weight:600;
@@ -1074,8 +1166,8 @@ margin-left:-20%;
      font-family:'Roboto Slab', serif;
      font-size:0.7em;
      margin-left:0%;
-     height:12px;
-     width:80%;
+     height:20px;
+     width:100%;
     
     
 }
@@ -1085,7 +1177,7 @@ margin-left:-20%;
 }
 
 #input1 .btn{
-    height:20px;
+    height:22px;
     font-size:0.7em;
     margin-left:-15px;
   
