@@ -5,7 +5,7 @@ web application
 
 An angularJs phonebook project utilizing Nodejs as Backend
 
-clone repo https://github.com/klikstore/mystore.git
+clone repo https://github.com/klikstore/klikpad.github.io.git
 
 change your cmd directory to the cloned repo dir
 
