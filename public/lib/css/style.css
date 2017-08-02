@@ -354,6 +354,8 @@ input:hover{
     margin-bottom:0px;
      box-shadow: 1px 1px 1px 1px #f2893e;
 }
+
+
 #single_contact #contact_call{
     width:15%;
     padding:5%;
@@ -363,6 +365,7 @@ input:hover{
        margin-right:0px;
      box-shadow: 1px 1px 1px 1px #f2893e;
 }
+
 
 #single_contact #details{
     margin:0 0 2% 20%;
@@ -599,6 +602,17 @@ margin-left:-10%;
        
 
 }
+#contact_call1 a button{
+   
+    margin:3%;
+    padding:5%;
+}
+.contact_reach .btn{
+      
+    margin:2px;
+    padding:6%;
+
+}
 
 .mythumbnail{
     height:100%;
@@ -625,7 +639,13 @@ margin-left:-10%;
 
  @media only screen and (max-width:480px){
 
+.contact_reach .btn{
+      width:33px;
+      height:32px; 
+    margin:2px;
+    padding:5%;
 
+}
 
     .navbar-brand span{
   

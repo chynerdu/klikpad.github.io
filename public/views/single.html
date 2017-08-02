@@ -18,14 +18,14 @@
                              <div class="row">
                              
                              <div class="col-md-2 col-sm-2 col-sx-2 wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms" id="image1" ><img  class="mythumbnail img-responsive" ng-src="{{thumbnail.dataUrl || 'lib/images/fb-image.jpg'}}">
-                                </div><span><div class="col-md-4 col-sm-4 col-sx-4" id="name1">First Name: {{contact.firstName}}<br>Last Name: {{contact.lastName}} <br> No: {{contact.PhoneNumber}}</div>  <span>
+                                </div><span><div class="col-md-4 col-sm-4 col-sx-4" id="name1">First Name: {{contact.firstName}}<br>Last Name: {{contact.lastName}} <br> Phone: {{contact.PhoneNumber}}</div>  <span>
                              </div>
                           
                                       
                                          <div class="col-md-4" id="email1 wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms"> E-mail: {{contact.Email}}</div>
 
-                                         <div class="col-md-2 wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms" id="contact_call1"><a ng-href='tel:{{X.PhoneNumber}}'><button class='btn btn-primary'><span class='fa fa-phone fa-2x'></span></button></a>
-                                       <a ng-href='mailto:{{X.Email}}'> <button class='btn btn-success'><span style="padding-left:2%;border-left:1px solid #f2893e;" class='fa fa-envelope fa-2x'></span></button></a></div>
+                                         <div class="col-md-2 wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms" id="contact_call1"><a ng-href='tel:{{contact.PhoneNumber}}'><button class='btn btn-primary'><span class='fa fa-phone fa-2x'></span></button></a>
+                                       <a ng-href='mailto:{{contact.Email}}'> <button class='btn btn-success'><span style="padding-left:2%;border-left:1px solid #f2893e;" class='fa fa-envelope fa-2x'></span></button></a></div>
 
                                      
  
