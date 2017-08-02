@@ -905,7 +905,8 @@ footer #footer_part ul li{
 
 #single_contact #details{
     margin:2% 0 2% 5%;
-    font-size:0.6em;
+    font-size:0.9em;
+    font-weight:600;
 }
 
 #single_contact #details button{
@@ -1112,7 +1113,7 @@ margin-left:-10%;
 #single_del{
     border-left:1px solid #f2893e;
     margin-left:5%;
-    font-size:0.45em;
+    font-size:0.6em;
     margin-top:5%;
     margin-bottom:10%;
 
