@@ -141,6 +141,11 @@ footer #footer_part ul{
       font-size:2.9em;
     font-weight:600;
 }
+#call h3{
+     
+      font-size:2.1em;
+    font-weight:600;
+}
 #sign-up{
     padding:10%;
     color:white;
@@ -696,6 +701,13 @@ nav ul li a{
       font-size:1em;
     font-weight:600;
 }
+
+#call h3{
+     
+     font-size:0.8em;
+    font-weight:600;
+}
+
 #sign-up{
     padding:5%;
     padding-top:1%;

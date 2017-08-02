@@ -28,10 +28,23 @@ angular.module('PhoneBook')
   $scope.isCollapsed = true;
   $scope.isCollapsedHorizontal = false;
 
-       $scope.myHeader='We keep your contacts.';
+        $scope.myHeader='We keep your contacts.';
        $timeout(function(){
-           $scope.myHeader='Your contact is safe with us.';}, 4000
+           $scope.myHeader='Relax!';}, 3000
        );
+        $timeout(function(){
+           $scope.myHeader='Your privacy is our priority';}, 5000
+       );
+         $timeout(function(){
+           $scope.myHeader='Klikpad will never reveal your contact to 3rd party';}, 9000
+       );
+         $timeout(function(){
+           $scope.myHeader='Are you a new user? Sign up! Its free and easy';}, 12000
+       );
+        $timeout(function(){
+           $scope.myHeader='Your contact is safe with us';}, 16000
+       );
+
 
        })
      
