@@ -1418,3 +1418,12 @@ margin-left:-20%;
     -webkit-filter:opacity(60%);
 }
  }
+ @media only screen and (device-width:1024px){
+
+     #mainbg{
+   background:url(../images/bg6.jpg);
+   background-repeat:no-repeat;
+    background-size:100%;
+    
+}
+ }
