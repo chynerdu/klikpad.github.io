@@ -19,7 +19,7 @@
 
 
 .navbar{
-    background:transparent;
+      width:100%;
      color: #fff !important;
     text-decoration: underline !important;
     -webkit-transform: translate3d(0, 0, 0);
@@ -30,13 +30,15 @@
 
 }
 
-
+.navbar{
+    background-color:black;
+}
 
 .navbar-brand span{
-    margin:15%;
+  
     font-size:1.2em;
     font-weight:500;
-    margin-left:30%;
+    margin-left:15%;
     letter-spacing:2px;
      color:#6fefc4;
 }
@@ -116,7 +118,9 @@ footer #footer_part ul{
     padding-bottom: 0%;
     padding-top:15%;
     color:white;
-   font-family: 'Roboto Slab', serif;
+     font-family:'Agency FB';
+     
+ 
 }
 #call h1{
      color:#6fefc4;
@@ -125,6 +129,8 @@ footer #footer_part ul{
      font-weight:500;
      letter-spacing:4px;
      line-height:30px;
+     font-family:'Agency FB';
+
 }
 #call p{
       margin-left:25%;
@@ -135,16 +141,19 @@ footer #footer_part ul{
      letter-spacing:2px;
      line-height:30px;
      color:#b7ffff;
+       font-family:'Square721 Cn Bt';
 }
 #call h2{
      
       font-size:2.9em;
     font-weight:600;
+      font-family:'Square721 Cn Bt';
 }
 #call h3{
      
       font-size:2.1em;
     font-weight:600;
+      font-family:'Square721 Cn Bt';
 }
 #sign-up{
     padding:10%;

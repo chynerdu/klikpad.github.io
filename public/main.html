@@ -2,10 +2,13 @@
 <html ng-app='PhoneBook'  > 
 <head>
    <title>klikPad | Phonebook app.</title>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width ,initial-scale=1">
     <base href='/'>
     <link rel='stylesheet' href='lib/bootstrap/dist/css/bootstrap.min.css'>
     <link rel="stylesheet" href="/lib/css/bootstrap.css">
+  
 <link rel="stylesheet" href="lib/css/megamenu.css" >
 <link rel="stylesheet" href="lib/css/style.css">
  <link rel="stylesheet" href="lib/css/owl-carousel/owl.carousel.min.css">
@@ -23,13 +26,13 @@
 </head>
 <body  ng-controller='HomepageController' style="background-color:#ffffee;">
    
-        <nav class=' navbar-inverse '>
-            <div class='navbar-header'>
-              <a ng-click='home1()' class='navbar-brand'><span class="fa fa-home">klik<i style="color:#da7126;">Pad.com</i></span></a></div><span>
+        <nav >
+            <div class=' navbar navbar-header'>
+              <a ng-click='home1()' class='navbar-brand'><span class="fa fa-home">klik<i style="color:#da7126;">Pad.com</i></span></a><span>
               <ul class='nav nav-tabs'>
                   <li><a href="#">Contact us</a></li>
                     <li><a href="#">Privacy</a></li>
-              </ul></span>
+              </ul></span></div>
             </nav>
          <div ng-view=""></div>
 
